@@ -1,0 +1,1020 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		424887F120580BE400E87BCB /* LoginTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424887F020580BE400E87BCB /* LoginTutorialViewController.swift */; };
+		424887FA20580C2400E87BCB /* SharedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424887F320580C2400E87BCB /* SharedController.swift */; };
+		424887FB20580C2400E87BCB /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424887F420580C2400E87BCB /* LoginController.swift */; };
+		424887FD20580C2400E87BCB /* ManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424887F620580C2400E87BCB /* ManagerController.swift */; };
+		4248880020580C2400E87BCB /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424887F920580C2400E87BCB /* UserController.swift */; };
+		4248880A2058100A00E87BCB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424888012058100A00E87BCB /* MenuViewController.swift */; };
+		424888102058100A00E87BCB /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424888072058100A00E87BCB /* SearchUserViewController.swift */; };
+		424888112058100A00E87BCB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424888082058100A00E87BCB /* ProfileViewController.swift */; };
+		424888122058100A00E87BCB /* ThanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424888092058100A00E87BCB /* ThanksViewController.swift */; };
+		424888162058137B00E87BCB /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424888152058137B00E87BCB /* DeviceViewController.swift */; };
+		424888182058140400E87BCB /* Pulsator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424888172058140400E87BCB /* Pulsator.swift */; };
+		4283F66C205916FB000988DB /* Gravatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4283F66B205916FB000988DB /* Gravatar.swift */; };
+		428E18C12057FC4400012AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18C02057FC4400012AFE /* AppDelegate.swift */; };
+		428E18C62057FC4400012AFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428E18C42057FC4400012AFE /* Main.storyboard */; };
+		428E18C82057FC4400012AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428E18C72057FC4400012AFE /* Assets.xcassets */; };
+		428E18CB2057FC4400012AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428E18C92057FC4400012AFE /* LaunchScreen.storyboard */; };
+		428E18D62057FC4400012AFE /* ThinkMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18D52057FC4400012AFE /* ThinkMeTests.swift */; };
+		428E19202057FD9700012AFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18E12057FD9700012AFE /* Constants.swift */; };
+		428E19212057FD9700012AFE /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18E22057FD9700012AFE /* Extentions.swift */; };
+		428E19232057FD9700012AFE /* CircleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18E52057FD9700012AFE /* CircleMenu.swift */; };
+		428E19242057FD9700012AFE /* CircleMenuLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18E72057FD9700012AFE /* CircleMenuLoader.swift */; };
+		428E19252057FD9700012AFE /* CircleMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18E92057FD9700012AFE /* CircleMenuButton.swift */; };
+		428E19262057FD9700012AFE /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18EC2057FD9700012AFE /* Authentication.swift */; };
+		428E19272057FD9700012AFE /* UserModelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18ED2057FD9700012AFE /* UserModelAPI.swift */; };
+		428E19292057FD9700012AFE /* ErrorCertiWine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18EF2057FD9700012AFE /* ErrorCertiWine.swift */; };
+		428E192F2057FD9700012AFE /* UserControllerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18F62057FD9700012AFE /* UserControllerAPI.swift */; };
+		428E19302057FD9700012AFE /* LoginControllerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18F72057FD9700012AFE /* LoginControllerAPI.swift */; };
+		428E19312057FD9700012AFE /* ControllerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18F82057FD9700012AFE /* ControllerAPI.swift */; };
+		428E19322057FD9700012AFE /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18FA2057FD9700012AFE /* UserAPI.swift */; };
+		428E19372057FD9700012AFE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E18FF2057FD9700012AFE /* API.swift */; };
+		428E19382057FD9700012AFE /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E19002057FD9700012AFE /* Font.swift */; };
+		428E193A2057FD9700012AFE /* PageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E19052057FD9700012AFE /* PageContainer.swift */; };
+		428E193B2057FD9700012AFE /* PageViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E19072057FD9700012AFE /* PageViewItem.swift */; };
+		428E193C2057FD9700012AFE /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E19082057FD9700012AFE /* PageView.swift */; };
+		428E193D2057FD9700012AFE /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E190A2057FD9700012AFE /* OnboardingContentView.swift */; };
+		428E193E2057FD9700012AFE /* OnboardingContantViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E190C2057FD9700012AFE /* OnboardingContantViewItem.swift */; };
+		428E193F2057FD9700012AFE /* PaperOnboardingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E190D2057FD9700012AFE /* PaperOnboardingDelegate.swift */; };
+		428E19402057FD9700012AFE /* FillAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E190F2057FD9700012AFE /* FillAnimationView.swift */; };
+		428E19412057FD9700012AFE /* PaperOnboardingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E19102057FD9700012AFE /* PaperOnboardingDataSource.swift */; };
+		428E19422057FD9700012AFE /* GestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E19122057FD9700012AFE /* GestureControl.swift */; };
+		428E19432057FD9700012AFE /* PaperOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E19132057FD9700012AFE /* PaperOnboarding.swift */; };
+		428E19442057FD9700012AFE /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E19152057FD9700012AFE /* ConstraintsHelper.swift */; };
+		428E19452057FD9700012AFE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428E19172057FD9700012AFE /* Config.swift */; };
+		428E19462057FD9700012AFE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428E19192057FD9700012AFE /* Media.xcassets */; };
+		428E19472057FD9700012AFE /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 428E191A2057FD9700012AFE /* Montserrat-Light.otf */; };
+		428E194B2057FD9700012AFE /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 428E191E2057FD9700012AFE /* Montserrat-Regular.ttf */; };
+		42D39EBC20585DA600723582 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D39EBB20585DA600723582 /* UserCell.swift */; };
+		42D39EBE20585E2100723582 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D39EBD20585E2100723582 /* DeviceCell.swift */; };
+		42D39EC020585EB100723582 /* DevicesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D39EBF20585EB100723582 /* DevicesTableViewController.swift */; };
+		42D39EC220585EE800723582 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D39EC120585EE800723582 /* UserDetailViewController.swift */; };
+		42D39EC420585F0B00723582 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D39EC320585F0B00723582 /* StatusViewController.swift */; };
+		42D39EC620588D8900723582 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D39EC520588D8900723582 /* User.swift */; };
+		975B3BF7F35B37DA05AB47D6 /* Pods_ThinkMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89352F0E6C3E662FBC598413 /* Pods_ThinkMeTests.framework */; };
+		E886820A580E79333F8B4DC7 /* Pods_ThinkMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D932ED7717974F2479CF2C4 /* Pods_ThinkMe.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		428E18D22057FC4400012AFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 428E18B52057FC4400012AFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 428E18BC2057FC4400012AFE;
+			remoteInfo = ThinkMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39282B5F85B303AD94159D67 /* Pods-ThinkMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkMeTests/Pods-ThinkMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		424887F020580BE400E87BCB /* LoginTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTutorialViewController.swift; sourceTree = "<group>"; };
+		424887F320580C2400E87BCB /* SharedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedController.swift; sourceTree = "<group>"; };
+		424887F420580C2400E87BCB /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		424887F620580C2400E87BCB /* ManagerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerController.swift; sourceTree = "<group>"; };
+		424887F920580C2400E87BCB /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		424888012058100A00E87BCB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		424888072058100A00E87BCB /* SearchUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchUserViewController.swift; sourceTree = "<group>"; };
+		424888082058100A00E87BCB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		424888092058100A00E87BCB /* ThanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanksViewController.swift; sourceTree = "<group>"; };
+		424888152058137B00E87BCB /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+		424888172058140400E87BCB /* Pulsator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsator.swift; sourceTree = "<group>"; };
+		4283F66B205916FB000988DB /* Gravatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gravatar.swift; sourceTree = "<group>"; };
+		4283F66E20591C47000988DB /* ThinkMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThinkMe-Bridging-Header.h"; sourceTree = "<group>"; };
+		428E18BD2057FC4400012AFE /* ThinkMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThinkMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		428E18C02057FC4400012AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		428E18C52057FC4400012AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		428E18C72057FC4400012AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		428E18CA2057FC4400012AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		428E18CC2057FC4400012AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		428E18D12057FC4400012AFE /* ThinkMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThinkMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		428E18D52057FC4400012AFE /* ThinkMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkMeTests.swift; sourceTree = "<group>"; };
+		428E18D72057FC4400012AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		428E18E12057FD9700012AFE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		428E18E22057FD9700012AFE /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		428E18E52057FD9700012AFE /* CircleMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenu.swift; sourceTree = "<group>"; };
+		428E18E72057FD9700012AFE /* CircleMenuLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuLoader.swift; sourceTree = "<group>"; };
+		428E18E92057FD9700012AFE /* CircleMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuButton.swift; sourceTree = "<group>"; };
+		428E18EC2057FD9700012AFE /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		428E18ED2057FD9700012AFE /* UserModelAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModelAPI.swift; sourceTree = "<group>"; };
+		428E18EF2057FD9700012AFE /* ErrorCertiWine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCertiWine.swift; sourceTree = "<group>"; };
+		428E18F62057FD9700012AFE /* UserControllerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserControllerAPI.swift; sourceTree = "<group>"; };
+		428E18F72057FD9700012AFE /* LoginControllerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginControllerAPI.swift; sourceTree = "<group>"; };
+		428E18F82057FD9700012AFE /* ControllerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerAPI.swift; sourceTree = "<group>"; };
+		428E18FA2057FD9700012AFE /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		428E18FF2057FD9700012AFE /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		428E19002057FD9700012AFE /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		428E19052057FD9700012AFE /* PageContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContainer.swift; sourceTree = "<group>"; };
+		428E19072057FD9700012AFE /* PageViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewItem.swift; sourceTree = "<group>"; };
+		428E19082057FD9700012AFE /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		428E190A2057FD9700012AFE /* OnboardingContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContentView.swift; sourceTree = "<group>"; };
+		428E190C2057FD9700012AFE /* OnboardingContantViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContantViewItem.swift; sourceTree = "<group>"; };
+		428E190D2057FD9700012AFE /* PaperOnboardingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperOnboardingDelegate.swift; sourceTree = "<group>"; };
+		428E190F2057FD9700012AFE /* FillAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillAnimationView.swift; sourceTree = "<group>"; };
+		428E19102057FD9700012AFE /* PaperOnboardingDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperOnboardingDataSource.swift; sourceTree = "<group>"; };
+		428E19122057FD9700012AFE /* GestureControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureControl.swift; sourceTree = "<group>"; };
+		428E19132057FD9700012AFE /* PaperOnboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperOnboarding.swift; sourceTree = "<group>"; };
+		428E19152057FD9700012AFE /* ConstraintsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsHelper.swift; sourceTree = "<group>"; };
+		428E19172057FD9700012AFE /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		428E19192057FD9700012AFE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		428E191A2057FD9700012AFE /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		428E191E2057FD9700012AFE /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		42D39EBB20585DA600723582 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		42D39EBD20585E2100723582 /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+		42D39EBF20585EB100723582 /* DevicesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesTableViewController.swift; sourceTree = "<group>"; };
+		42D39EC120585EE800723582 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		42D39EC320585F0B00723582 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		42D39EC520588D8900723582 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6D932ED7717974F2479CF2C4 /* Pods_ThinkMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThinkMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C59275E8C7757D6D03BD587 /* Pods-ThinkMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkMe/Pods-ThinkMe.debug.xcconfig"; sourceTree = "<group>"; };
+		89352F0E6C3E662FBC598413 /* Pods_ThinkMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThinkMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90DEABD97E04835051520F0 /* Pods-ThinkMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkMe/Pods-ThinkMe.release.xcconfig"; sourceTree = "<group>"; };
+		E0459AFE09183A1C5AD602C2 /* Pods-ThinkMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThinkMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThinkMeTests/Pods-ThinkMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		428E18BA2057FC4400012AFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E886820A580E79333F8B4DC7 /* Pods_ThinkMe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428E18CE2057FC4400012AFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975B3BF7F35B37DA05AB47D6 /* Pods_ThinkMeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EEA4273DC50A5107A11E2DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D932ED7717974F2479CF2C4 /* Pods_ThinkMe.framework */,
+				89352F0E6C3E662FBC598413 /* Pods_ThinkMeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42488813205810C500E87BCB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				424888012058100A00E87BCB /* MenuViewController.swift */,
+				424888082058100A00E87BCB /* ProfileViewController.swift */,
+				424888072058100A00E87BCB /* SearchUserViewController.swift */,
+				424888092058100A00E87BCB /* ThanksViewController.swift */,
+				424887F020580BE400E87BCB /* LoginTutorialViewController.swift */,
+				424888152058137B00E87BCB /* DeviceViewController.swift */,
+				42D39EBF20585EB100723582 /* DevicesTableViewController.swift */,
+				42D39EC120585EE800723582 /* UserDetailViewController.swift */,
+				42D39EC320585F0B00723582 /* StatusViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		42488814205810CC00E87BCB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				42D39EBB20585DA600723582 /* UserCell.swift */,
+				42D39EBD20585E2100723582 /* DeviceCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		428E18B42057FC4400012AFE = {
+			isa = PBXGroup;
+			children = (
+				428E18BF2057FC4400012AFE /* ThinkMe */,
+				428E18D42057FC4400012AFE /* ThinkMeTests */,
+				428E18BE2057FC4400012AFE /* Products */,
+				F73B226A1D71BFFD93EEBF59 /* Pods */,
+				0EEA4273DC50A5107A11E2DD /* Frameworks */,
+				4283F66E20591C47000988DB /* ThinkMe-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		428E18BE2057FC4400012AFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				428E18BD2057FC4400012AFE /* ThinkMe.app */,
+				428E18D12057FC4400012AFE /* ThinkMeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		428E18BF2057FC4400012AFE /* ThinkMe */ = {
+			isa = PBXGroup;
+			children = (
+				428E19502057FE8800012AFE /* Models */,
+				428E194F2057FE8000012AFE /* Views */,
+				428E194D2057FE7300012AFE /* Controllers */,
+				428E19182057FD9700012AFE /* Assets */,
+				428E19172057FD9700012AFE /* Config.swift */,
+				428E18E02057FD9700012AFE /* Helpers */,
+				428E19162057FD9700012AFE /* Stores */,
+				428E18C02057FC4400012AFE /* AppDelegate.swift */,
+				428E18C72057FC4400012AFE /* Assets.xcassets */,
+				428E18CC2057FC4400012AFE /* Info.plist */,
+			);
+			path = ThinkMe;
+			sourceTree = "<group>";
+		};
+		428E18D42057FC4400012AFE /* ThinkMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				428E18D52057FC4400012AFE /* ThinkMeTests.swift */,
+				428E18D72057FC4400012AFE /* Info.plist */,
+			);
+			path = ThinkMeTests;
+			sourceTree = "<group>";
+		};
+		428E18E02057FD9700012AFE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				424888172058140400E87BCB /* Pulsator.swift */,
+				428E18E12057FD9700012AFE /* Constants.swift */,
+				428E18E22057FD9700012AFE /* Extentions.swift */,
+				428E18E42057FD9700012AFE /* CircularMenu */,
+				428E18EA2057FD9700012AFE /* API */,
+				428E19002057FD9700012AFE /* Font.swift */,
+				428E19022057FD9700012AFE /* PaperOnBoarding */,
+				4283F66B205916FB000988DB /* Gravatar.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		428E18E42057FD9700012AFE /* CircularMenu */ = {
+			isa = PBXGroup;
+			children = (
+				428E18E52057FD9700012AFE /* CircleMenu.swift */,
+				428E18E62057FD9700012AFE /* CircleMenuLoader */,
+				428E18E82057FD9700012AFE /* CircleMenuButton */,
+			);
+			path = CircularMenu;
+			sourceTree = "<group>";
+		};
+		428E18E62057FD9700012AFE /* CircleMenuLoader */ = {
+			isa = PBXGroup;
+			children = (
+				428E18E72057FD9700012AFE /* CircleMenuLoader.swift */,
+			);
+			path = CircleMenuLoader;
+			sourceTree = "<group>";
+		};
+		428E18E82057FD9700012AFE /* CircleMenuButton */ = {
+			isa = PBXGroup;
+			children = (
+				428E18E92057FD9700012AFE /* CircleMenuButton.swift */,
+			);
+			path = CircleMenuButton;
+			sourceTree = "<group>";
+		};
+		428E18EA2057FD9700012AFE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				428E18EB2057FD9700012AFE /* Models */,
+				428E18F32057FD9700012AFE /* Controller */,
+				428E18F92057FD9700012AFE /* Endpoint */,
+				428E18FF2057FD9700012AFE /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		428E18EB2057FD9700012AFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				428E18EC2057FD9700012AFE /* Authentication.swift */,
+				428E18ED2057FD9700012AFE /* UserModelAPI.swift */,
+				428E18EF2057FD9700012AFE /* ErrorCertiWine.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		428E18F32057FD9700012AFE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				428E18F62057FD9700012AFE /* UserControllerAPI.swift */,
+				428E18F72057FD9700012AFE /* LoginControllerAPI.swift */,
+				428E18F82057FD9700012AFE /* ControllerAPI.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		428E18F92057FD9700012AFE /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				428E18FA2057FD9700012AFE /* UserAPI.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		428E19022057FD9700012AFE /* PaperOnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				428E19032057FD9700012AFE /* PageView */,
+				428E19092057FD9700012AFE /* OnboardingContentView */,
+				428E190D2057FD9700012AFE /* PaperOnboardingDelegate.swift */,
+				428E190E2057FD9700012AFE /* FillAnimationView */,
+				428E19102057FD9700012AFE /* PaperOnboardingDataSource.swift */,
+				428E19112057FD9700012AFE /* GestureControl */,
+				428E19132057FD9700012AFE /* PaperOnboarding.swift */,
+				428E19142057FD9700012AFE /* Helpers */,
+			);
+			path = PaperOnBoarding;
+			sourceTree = "<group>";
+		};
+		428E19032057FD9700012AFE /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				428E19042057FD9700012AFE /* PageContainerView */,
+				428E19062057FD9700012AFE /* Item */,
+				428E19082057FD9700012AFE /* PageView.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		428E19042057FD9700012AFE /* PageContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				428E19052057FD9700012AFE /* PageContainer.swift */,
+			);
+			path = PageContainerView;
+			sourceTree = "<group>";
+		};
+		428E19062057FD9700012AFE /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				428E19072057FD9700012AFE /* PageViewItem.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		428E19092057FD9700012AFE /* OnboardingContentView */ = {
+			isa = PBXGroup;
+			children = (
+				428E190A2057FD9700012AFE /* OnboardingContentView.swift */,
+				428E190B2057FD9700012AFE /* Item */,
+			);
+			path = OnboardingContentView;
+			sourceTree = "<group>";
+		};
+		428E190B2057FD9700012AFE /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				428E190C2057FD9700012AFE /* OnboardingContantViewItem.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		428E190E2057FD9700012AFE /* FillAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				428E190F2057FD9700012AFE /* FillAnimationView.swift */,
+			);
+			path = FillAnimationView;
+			sourceTree = "<group>";
+		};
+		428E19112057FD9700012AFE /* GestureControl */ = {
+			isa = PBXGroup;
+			children = (
+				428E19122057FD9700012AFE /* GestureControl.swift */,
+			);
+			path = GestureControl;
+			sourceTree = "<group>";
+		};
+		428E19142057FD9700012AFE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				428E19152057FD9700012AFE /* ConstraintsHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		428E19162057FD9700012AFE /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		428E19182057FD9700012AFE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				428E191A2057FD9700012AFE /* Montserrat-Light.otf */,
+				428E191E2057FD9700012AFE /* Montserrat-Regular.ttf */,
+				428E19192057FD9700012AFE /* Media.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		428E194D2057FE7300012AFE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				424887F320580C2400E87BCB /* SharedController.swift */,
+				424887F420580C2400E87BCB /* LoginController.swift */,
+				424887F620580C2400E87BCB /* ManagerController.swift */,
+				424887F920580C2400E87BCB /* UserController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		428E194F2057FE8000012AFE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42488814205810CC00E87BCB /* Components */,
+				42488813205810C500E87BCB /* ViewControllers */,
+				428E18C42057FC4400012AFE /* Main.storyboard */,
+				428E18C92057FC4400012AFE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		428E19502057FE8800012AFE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42D39EC520588D8900723582 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F73B226A1D71BFFD93EEBF59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C59275E8C7757D6D03BD587 /* Pods-ThinkMe.debug.xcconfig */,
+				A90DEABD97E04835051520F0 /* Pods-ThinkMe.release.xcconfig */,
+				E0459AFE09183A1C5AD602C2 /* Pods-ThinkMeTests.debug.xcconfig */,
+				39282B5F85B303AD94159D67 /* Pods-ThinkMeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		428E18BC2057FC4400012AFE /* ThinkMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428E18DA2057FC4400012AFE /* Build configuration list for PBXNativeTarget "ThinkMe" */;
+			buildPhases = (
+				BD9505C472A4321060974F81 /* [CP] Check Pods Manifest.lock */,
+				428E18B92057FC4400012AFE /* Sources */,
+				428E18BA2057FC4400012AFE /* Frameworks */,
+				428E18BB2057FC4400012AFE /* Resources */,
+				BDF069E60FC05138349DDF97 /* [CP] Embed Pods Frameworks */,
+				1EE410CCFD1389967530F62B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThinkMe;
+			productName = ThinkMe;
+			productReference = 428E18BD2057FC4400012AFE /* ThinkMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		428E18D02057FC4400012AFE /* ThinkMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428E18DD2057FC4400012AFE /* Build configuration list for PBXNativeTarget "ThinkMeTests" */;
+			buildPhases = (
+				5397E895CC703149A3D309BA /* [CP] Check Pods Manifest.lock */,
+				428E18CD2057FC4400012AFE /* Sources */,
+				428E18CE2057FC4400012AFE /* Frameworks */,
+				428E18CF2057FC4400012AFE /* Resources */,
+				BD65455DFB5CEE89390A4412 /* [CP] Embed Pods Frameworks */,
+				FCE45640F281B7ED4C7756A6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				428E18D32057FC4400012AFE /* PBXTargetDependency */,
+			);
+			name = ThinkMeTests;
+			productName = ThinkMeTests;
+			productReference = 428E18D12057FC4400012AFE /* ThinkMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		428E18B52057FC4400012AFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ThinkMe;
+				TargetAttributes = {
+					428E18BC2057FC4400012AFE = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+					428E18D02057FC4400012AFE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 428E18BC2057FC4400012AFE;
+					};
+				};
+			};
+			buildConfigurationList = 428E18B82057FC4400012AFE /* Build configuration list for PBXProject "ThinkMe" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 428E18B42057FC4400012AFE;
+			productRefGroup = 428E18BE2057FC4400012AFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				428E18BC2057FC4400012AFE /* ThinkMe */,
+				428E18D02057FC4400012AFE /* ThinkMeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		428E18BB2057FC4400012AFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428E194B2057FD9700012AFE /* Montserrat-Regular.ttf in Resources */,
+				428E19472057FD9700012AFE /* Montserrat-Light.otf in Resources */,
+				428E18CB2057FC4400012AFE /* LaunchScreen.storyboard in Resources */,
+				428E18C82057FC4400012AFE /* Assets.xcassets in Resources */,
+				428E19462057FD9700012AFE /* Media.xcassets in Resources */,
+				428E18C62057FC4400012AFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428E18CF2057FC4400012AFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EE410CCFD1389967530F62B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThinkMe/Pods-ThinkMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5397E895CC703149A3D309BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThinkMeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD65455DFB5CEE89390A4412 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThinkMeTests/Pods-ThinkMeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD9505C472A4321060974F81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThinkMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDF069E60FC05138349DDF97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ThinkMe/Pods-ThinkMe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BlueCapKit/BlueCapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FaceAware/FaceAware.framework",
+				"${BUILT_PRODUCTS_DIR}/FontAwesomeKit/FontAwesomeKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/ILLoginKit/ILLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Pulsator/Pulsator.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Validator/Validator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlueCapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FaceAware.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesomeKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ILLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pulsator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThinkMe/Pods-ThinkMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCE45640F281B7ED4C7756A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThinkMeTests/Pods-ThinkMeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		428E18B92057FC4400012AFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428E19442057FD9700012AFE /* ConstraintsHelper.swift in Sources */,
+				428E19232057FD9700012AFE /* CircleMenu.swift in Sources */,
+				428E193B2057FD9700012AFE /* PageViewItem.swift in Sources */,
+				428E193E2057FD9700012AFE /* OnboardingContantViewItem.swift in Sources */,
+				428E19292057FD9700012AFE /* ErrorCertiWine.swift in Sources */,
+				428E19302057FD9700012AFE /* LoginControllerAPI.swift in Sources */,
+				424887FD20580C2400E87BCB /* ManagerController.swift in Sources */,
+				424888122058100A00E87BCB /* ThanksViewController.swift in Sources */,
+				42D39EC220585EE800723582 /* UserDetailViewController.swift in Sources */,
+				424888102058100A00E87BCB /* SearchUserViewController.swift in Sources */,
+				428E19372057FD9700012AFE /* API.swift in Sources */,
+				428E19422057FD9700012AFE /* GestureControl.swift in Sources */,
+				428E19212057FD9700012AFE /* Extentions.swift in Sources */,
+				428E19402057FD9700012AFE /* FillAnimationView.swift in Sources */,
+				428E192F2057FD9700012AFE /* UserControllerAPI.swift in Sources */,
+				424887FB20580C2400E87BCB /* LoginController.swift in Sources */,
+				42D39EBE20585E2100723582 /* DeviceCell.swift in Sources */,
+				4283F66C205916FB000988DB /* Gravatar.swift in Sources */,
+				424888112058100A00E87BCB /* ProfileViewController.swift in Sources */,
+				428E193D2057FD9700012AFE /* OnboardingContentView.swift in Sources */,
+				424888182058140400E87BCB /* Pulsator.swift in Sources */,
+				428E19432057FD9700012AFE /* PaperOnboarding.swift in Sources */,
+				428E19252057FD9700012AFE /* CircleMenuButton.swift in Sources */,
+				428E193F2057FD9700012AFE /* PaperOnboardingDelegate.swift in Sources */,
+				424887FA20580C2400E87BCB /* SharedController.swift in Sources */,
+				424887F120580BE400E87BCB /* LoginTutorialViewController.swift in Sources */,
+				4248880020580C2400E87BCB /* UserController.swift in Sources */,
+				428E19312057FD9700012AFE /* ControllerAPI.swift in Sources */,
+				428E193C2057FD9700012AFE /* PageView.swift in Sources */,
+				428E18C12057FC4400012AFE /* AppDelegate.swift in Sources */,
+				428E19242057FD9700012AFE /* CircleMenuLoader.swift in Sources */,
+				428E19272057FD9700012AFE /* UserModelAPI.swift in Sources */,
+				428E19202057FD9700012AFE /* Constants.swift in Sources */,
+				42D39EC620588D8900723582 /* User.swift in Sources */,
+				42D39EC420585F0B00723582 /* StatusViewController.swift in Sources */,
+				42D39EBC20585DA600723582 /* UserCell.swift in Sources */,
+				428E193A2057FD9700012AFE /* PageContainer.swift in Sources */,
+				428E19262057FD9700012AFE /* Authentication.swift in Sources */,
+				428E19382057FD9700012AFE /* Font.swift in Sources */,
+				42D39EC020585EB100723582 /* DevicesTableViewController.swift in Sources */,
+				4248880A2058100A00E87BCB /* MenuViewController.swift in Sources */,
+				424888162058137B00E87BCB /* DeviceViewController.swift in Sources */,
+				428E19412057FD9700012AFE /* PaperOnboardingDataSource.swift in Sources */,
+				428E19452057FD9700012AFE /* Config.swift in Sources */,
+				428E19322057FD9700012AFE /* UserAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428E18CD2057FC4400012AFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428E18D62057FC4400012AFE /* ThinkMeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		428E18D32057FC4400012AFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 428E18BC2057FC4400012AFE /* ThinkMe */;
+			targetProxy = 428E18D22057FC4400012AFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		428E18C42057FC4400012AFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428E18C52057FC4400012AFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		428E18C92057FC4400012AFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				428E18CA2057FC4400012AFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		428E18D82057FC4400012AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		428E18D92057FC4400012AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		428E18DB2057FC4400012AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C59275E8C7757D6D03BD587 /* Pods-ThinkMe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6S5F5K22NW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ThinkMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iocreate.ThinkMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThinkMe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		428E18DC2057FC4400012AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A90DEABD97E04835051520F0 /* Pods-ThinkMe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6S5F5K22NW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ThinkMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iocreate.ThinkMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThinkMe-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		428E18DE2057FC4400012AFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0459AFE09183A1C5AD602C2 /* Pods-ThinkMeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6S5F5K22NW;
+				INFOPLIST_FILE = ThinkMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iocreate.ThinkMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThinkMe.app/ThinkMe";
+			};
+			name = Debug;
+		};
+		428E18DF2057FC4400012AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39282B5F85B303AD94159D67 /* Pods-ThinkMeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6S5F5K22NW;
+				INFOPLIST_FILE = ThinkMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iocreate.ThinkMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThinkMe.app/ThinkMe";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		428E18B82057FC4400012AFE /* Build configuration list for PBXProject "ThinkMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428E18D82057FC4400012AFE /* Debug */,
+				428E18D92057FC4400012AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428E18DA2057FC4400012AFE /* Build configuration list for PBXNativeTarget "ThinkMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428E18DB2057FC4400012AFE /* Debug */,
+				428E18DC2057FC4400012AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428E18DD2057FC4400012AFE /* Build configuration list for PBXNativeTarget "ThinkMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428E18DE2057FC4400012AFE /* Debug */,
+				428E18DF2057FC4400012AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 428E18B52057FC4400012AFE /* Project object */;
+}
