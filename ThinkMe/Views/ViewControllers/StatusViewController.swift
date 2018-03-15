@@ -24,8 +24,8 @@ class StatusViewController: UIViewController{
     profileImageView.roundedImage()
     profilePairedImageView.roundedImage()
     
-    namePairedLabel.text = "Not Paired"
-    emailPairedLabel.text = ""
+    emailPairedLabel.text = "Not connected"
+    namePairedLabel.text = ""
     NotificationCenter.default.addObserver(self, selector: #selector(refreshInterface), name: NSNotification.Name(rawValue: "refreshStatusView"), object: nil)
     refresh()
   }
@@ -51,6 +51,10 @@ class StatusViewController: UIViewController{
   @IBAction func menuTouch(_ sender: UIButton) {
     let viewControllerType: ViewControllerType = .Menu
     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "pushViewController"), object: viewControllerType)
+  }
+  
+  @IBAction func deleteTouch(_ sender: Any) {
+    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "depair"), object: nil)
   }
 }
 

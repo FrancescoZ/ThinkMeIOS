@@ -70,6 +70,17 @@ extension ManagerController{
     }
   }
   
+  @objc func depair(notification: Notification){
+    if ((Shared.User?.paired) != nil) && (Shared.User?.validPair)! {
+      API.deletePair(userId: Shared.UserId, onSuccess: { user in
+        let viewControllerType: ViewControllerType = .Status
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "pushViewController"), object: viewControllerType)
+      }, onFailure: showError)
+    }else{
+      NotificationCenter.default.post(name: NSNotification.Name(rawValue: "refreshStatusView"), object: nil)
+    }
+  }
+  
   @objc func poke(notification: Notification){
     if ((Shared.User?.paired) != nil) && (Shared.User?.validPair)! {
       API.poke(userId: Shared.UserId, onSuccess: {_ in 

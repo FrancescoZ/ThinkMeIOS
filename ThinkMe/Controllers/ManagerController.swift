@@ -34,6 +34,7 @@ class ManagerController{
     NotificationCenter.default.addObserver(self, selector: #selector(getStatus), name: NSNotification.Name(rawValue: "getStatus"), object: nil)
     
     NotificationCenter.default.addObserver(self, selector: #selector(pair), name: NSNotification.Name(rawValue: "pairWith"), object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(depair), name: NSNotification.Name(rawValue: "depair"), object: nil)
     NotificationCenter.default.addObserver(self, selector: #selector(pair), name: NSNotification.Name(rawValue: "poke"), object: nil)
     
     NotificationCenter.default.addObserver(self, selector: #selector(handleError), name: NSNotification.Name(rawValue: "handleError"), object: nil)
