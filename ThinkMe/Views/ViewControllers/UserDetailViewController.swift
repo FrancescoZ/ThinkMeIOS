@@ -16,6 +16,8 @@ class UserDetailViewController: UIViewController{
   
   @IBOutlet weak var pairButton: UIButton!
   
+  var idUser: String!
+  
   override func viewDidLoad() {
     profileImage.roundedImage()
     //pairButton.layer.cornerRadius = pairButton.frame.size.width / 2
@@ -27,7 +29,12 @@ class UserDetailViewController: UIViewController{
     nameLabel.text = usr.fullName
     emailLabel.text = usr.email
     
+    idUser = usr.id
+    
     profileImage.downloadedFrom(email: usr.email )
+  }
+  @IBAction func pairTouch(_ sender: Any) {
+    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "pairWith"), object: idUser)
   }
   
   @IBAction func backTouch(_ sender: Any) {

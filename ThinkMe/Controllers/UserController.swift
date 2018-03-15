@@ -59,6 +59,26 @@ extension ManagerController{
     }, onFailure: showError)
   }
   
+  @objc func pair(notification: Notification){
+    if ((Shared.User?.paired) != nil) && (Shared.User?.validPair)! {
+      API.pair(senderId: Shared.UserId, receiverId: notification.object as! String, onSuccess: { user in
+        let viewControllerType: ViewControllerType = .Status
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "pushViewController"), object: viewControllerType)
+      }, onFailure: showError)
+    }else{
+      NotificationCenter.default.post(name: NSNotification.Name(rawValue: "refreshStatusView"), object: nil)
+    }
+  }
+  
+  @objc func poke(notification: Notification){
+    if ((Shared.User?.paired) != nil) && (Shared.User?.validPair)! {
+      API.poke(userId: Shared.UserId, onSuccess: {_ in 
+      }, onFailure: showError)
+    }else{
+      NotificationCenter.default.post(name: NSNotification.Name(rawValue: "refreshStatusView"), object: nil)
+    }
+  }
+  
   @objc func getStatus(notification: Notification){
     if ((Shared.User?.paired) != nil) && (Shared.User?.validPair)! {
       API.getUser(withId: (Shared.User?.paired)!, onSuccess: { user in

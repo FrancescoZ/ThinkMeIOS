@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -253,10 +254,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover-vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Za-P7-aeO">
                                 <rect key="frame" x="87" y="88" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="3UL-ag-FJX"/>
                                     <constraint firstAttribute="width" constant="200" id="EPo-Ij-WMK"/>
+                                    <constraint firstAttribute="width" secondItem="5Za-P7-aeO" secondAttribute="height" multiplier="1:1" id="Vaz-jB-mwK"/>
                                     <constraint firstAttribute="height" constant="200" id="Xj1-D7-cpY"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="yda-LY-bzu"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="focusOnFaces" value="YES"/>
@@ -299,8 +299,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover-horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="9iy-pZ-oyN">
                                 <rect key="frame" x="110" y="474" width="155" height="155"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="155" id="AKo-xb-633"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="155" id="OkB-QD-Hp0"/>
+                                    <constraint firstAttribute="width" secondItem="9iy-pZ-oyN" secondAttribute="height" multiplier="1:1" id="1eW-xc-MzG"/>
                                     <constraint firstAttribute="height" constant="155" id="RU4-VJ-Vwa"/>
                                     <constraint firstAttribute="width" constant="155" id="SkD-uj-WCJ"/>
                                 </constraints>
@@ -486,7 +485,7 @@
                                                         <constraint firstAttribute="width" constant="263" id="4i5-7g-Ye6"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
-                                                    <color key="textColor" red="0.65851683940000005" green="0.65851683940000005" blue="0.65851683940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.6705138087272644" green="0.67063111066818237" blue="0.67050635814666748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -509,6 +508,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="emailLabel" destination="TmB-1N-41e" id="CSG-zB-dqY"/>
+                                            <outlet property="pairImageView" destination="ysG-pP-DxD" id="hsQ-F9-NuR"/>
                                             <outlet property="userNameLabel" destination="UKJ-K5-qHD" id="Arn-YV-mOw"/>
                                         </connections>
                                     </tableViewCell>
@@ -808,6 +808,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.061052374541759491" green="0.50011003017425537" blue="0.9988207221031189" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pairTouch:" destination="YVD-bO-5ic" eventType="touchDown" id="n4v-YP-BQF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

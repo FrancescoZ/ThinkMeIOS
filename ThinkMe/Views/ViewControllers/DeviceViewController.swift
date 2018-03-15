@@ -80,8 +80,15 @@ extension DeviceViewController: CBCentralManagerDelegate,CBPeripheralDelegate{
     let device = advertisementData[CBAdvertisementDataLocalNameKey] as? String
     if (device?.contains(deviceName)) != nil {
       self.manager.stopScan()
+      
       sourceView.isHidden = false
       infoLabel.isHidden = true
+      
+      pulsator.start()
+      pulsator.numPulse = 10
+      pulsator.radius = CGFloat(200)
+      pulsator.animationDuration = 10
+      
       self.connectedPeripheral = peripheral
       self.connectedPeripheral.delegate = self
       manager.connect(peripheral, options: nil)
@@ -134,10 +141,9 @@ extension DeviceViewController: CBCentralManagerDelegate,CBPeripheralDelegate{
 
   //MARK:- characteristic change
   func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
+    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "poke"), object: nil)
     if pulsator.isPulsating {
       pulsator.stop()
-      
-      
     }else {
       pulsator.start()
       pulsator.numPulse = 10

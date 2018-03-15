@@ -63,12 +63,17 @@ extension SearchUserViewController: UITableViewDataSource, UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as! UserCell
-    cell.setup(name: filteredUsers[indexPath.row].fullName, email: filteredUsers[indexPath.row].email)
+    cell.setup(name: filteredUsers[indexPath.row].fullName,
+               email: filteredUsers[indexPath.row].email,
+               state: filteredUsers[indexPath.row].id == Shared.UserId ? .deactive : .active)
     return cell
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
+    if filteredUsers[indexPath.row].id == Shared.UserId {
+      tableView.deselectRow(at: indexPath, animated: true)
+      return
+    }
     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "getUser"), object: filteredUsers[indexPath.row].id)
     tableView.deselectRow(at: indexPath, animated: true)
     let viewControllerType: ViewControllerType = .DetailUser
